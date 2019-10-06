@@ -24,14 +24,18 @@
   },
   "dependencies": {
     "babel-plugin-wildcard": "^5.0.0",
+    "bootstrap": "^4.3.1",
     "brace": "^0.11.1",
     "custom-electron-titlebar": "^3.1.0",
     "electron-is-dev": "^1.1.0",
+    "jquery": "^3.4.1",
     "react": "^16.10.2",
     "react-ace": "^7.0.4",
+    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
-    "react-scripts": "3.2.0"
+    "react-scripts": "3.2.0",
+    "react-treebeard": "^3.2.4"
   },
   "main": "public/electron.js",
   "scripts": {

@@ -5,8 +5,8 @@ import Welcome from './components/Welcome'
 
 function App() {
   return (
-    <div className="App" style={{height: '100%'}}>
-        <Welcome />
+    <div className="App main-container">
+        <Editor />
     </div>
   );
 }

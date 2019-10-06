@@ -9,17 +9,18 @@
   background: #282c34;
 }
 
-.text-editor {
-  width: 100vw !important;
-}
-
-.modal-important {
+/* .modal-important {
   display: block !important;
   opacity: 1;
-}
+} */
 
 .ace_print-margin {
   display: none !important;
+}
+
+.editor-container {
+  margin: 0px !important; 
+  padding: 0px !important;
 }
 
 .welcome-jumbotron {
@@ -49,23 +50,10 @@
   sans-serif;
 }
 
-.modal.exitTrans {
-  position: absolute;
-  -webkit-animation: slide 0.5s forwards;
-  -webkit-animation-delay: 2s;
-  animation: slide 0.5s forwards;
-  animation-delay: 1s;
-  
-}
-
-@-webkit-keyframes slideOut {
-  100% { top: 100% !important; }
-}
-
-@keyframes slideOut {
-  100% { top: 100% !important; }
-}
-
 .container-after-titlebar {
   overflow: hidden !important;
+}
+
+.main-container {
+  height: 100%;
 }
