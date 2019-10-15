@@ -4,6 +4,7 @@ import '../index.css';
 import App from '../App'
 import {Helmet} from "react-helmet";
 import CreateTweakModal from './CreateTweakModal'
+import '../App.css';
 
 class Welcome extends React.Component {
     constructor(props) {
@@ -17,6 +18,7 @@ class Welcome extends React.Component {
       };
     
       this.handleChange = this.handleChange.bind(this);
+      this.openEditor = this.openEditor.bind(this);
     }
 
     componentDidMount() {
@@ -28,6 +30,12 @@ class Welcome extends React.Component {
       this.state.tweakName = event.target.value;
     }
   
+    openEditor() {
+        ReactDOM.render((
+            <App view="editor"/>
+        ), document.getElementById('root'));
+    }
+
     render() {
         
     function generateApp() {
@@ -87,6 +95,7 @@ class Welcome extends React.Component {
                         </div>
                     </div>
                 </div>
+                <a className="btn btn-primary btn-lg mx-auto" href="#" role="button" style={{marginTop: '5vh'}} onClick={this.openEditor}>Open TIDE project</a>
             </div>
         </div>
       );

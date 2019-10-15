@@ -1,0 +1,72 @@
+  .directory {
+    padding-left: 10px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .directory__toggle {
+    padding-left: 10px;
+    transform: rotate(-90deg)
+  }
+  
+  .directory__icon {
+    padding-left: 10px;
+  }
+  
+  .directory__icon {
+    padding-left: 10px;
+  }
+  
+  .directory__name {
+    padding-left: 10px;
+  }
+  
+  .directory-container {
+    padding-left: 10px;
+  }
+  
+  .file {
+    padding-left: 50px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    display: flex;
+  }
+  
+  .file__icon {
+    padding-left: 10px;
+  }
+  
+  .file__name {
+    padding-left: 10px;
+  }
+  
+  .file__options {
+    align-self: flex-end;
+  }
+  
+  
+  .active {
+    color: #FFFFFF;
+    background-color: #31343F;
+  }
+  
+  .icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  .svg-icon {
+    width: 1em;
+    height: 1em;
+  }
+  
+  .expanded {
+    transform: rotate(0deg)
+  }

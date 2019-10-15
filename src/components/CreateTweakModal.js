@@ -55,10 +55,10 @@ class CreateTweakModal extends React.Component {
                     </div>
                     </Modal.Body>
                     <Button variant="secondary" className="mx-auto" onClick={this.handleClose} style={{marginTop: '0', marginBottom: '3%', width: '90%'}}>
-                        Close
+                        Cancel
                     </Button>
                     <Button variant="primary" className="mx-auto" onClick={this.handleClose} style={{marginTop: '0', marginBottom: '3%', width: '90%'}}>
-                        Save Changes
+                        Next
                     </Button>
                 </Modal>
             </div>

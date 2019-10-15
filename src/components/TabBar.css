@@ -1,0 +1,151 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400&subset=latin,latin-ext);
+
+.top-editor-bar {
+	height: 35px;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+ul.tabs {
+	width: 100%;
+	position: relative;
+	height: 35px;
+	margin: 0 0 0 0;
+	list-style: none;
+	overflow: hidden;
+	padding: 0;
+	text-align: left;
+}
+ul.tabs li {	
+	position: relative;
+	width: fit-content;
+	display: inline-block;
+}
+
+#tab {
+	margin-top: 0px !important;
+}
+
+ul.tabs li:after {
+    box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+}
+
+ul.tabs li:before {
+    box-sizing: content-box !important;
+    -webkit-box-sizing: content-box !important;
+}
+
+ul.tabs li a {
+	position: relative;
+	height: 35px;
+	overflow: hidden;
+	padding: 6px 10px 6px 10px;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	font-size: 16px;
+	text-align: center;	
+	text-decoration: none;
+	color: #ffffff;
+	display: block;
+	background: #6edeef;
+	/* -webkit-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+	   -moz-box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+	        box-shadow: 8px 12px 25px 2px rgba(0,0,0,0.4);
+	        	border: 0px solid #000000;
+	-webkit-transition: padding 0.2s ease, margin 0.2s ease;
+       -moz-transition: padding 0.2s ease, margin 0.2s ease;
+         -o-transition: padding 0.2s ease, margin 0.2s ease;
+        -ms-transition: padding 0.2s ease, margin 0.2s ease;
+			transition: padding 0.2s ease, margin 0.2s ease; */
+	-webkit-transition: font-size 0.2s ease, padding 0.2s ease;
+       -moz-transition: font-size 0.2s ease, padding 0.2s ease;
+         -o-transition: font-size 0.2s ease, padding 0.2s ease;
+        -ms-transition: font-size 0.2s ease, padding 0.2s ease;
+			transition: font-size 0.2s ease, padding 0.2s ease;
+}
+.tabs li:first-child a {
+	z-index: 3;
+}
+.tabs li:nth-child(2) a {
+	z-index: 2;
+}
+.tabs li:last-child a {
+	z-index: 1;
+}
+ul.tabs li a:hover {
+	padding: 3px 6px 3px 6px;
+    font-size: 18px;
+    color: #6edeef;
+}
+ul.tabs li a.active {
+	background: #545f60;
+	color: #6edeef;
+	/*color: #ff6831;*/
+	z-index: 4;
+	outline: none;
+}
+.group:before,
+.group:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.group:after {
+    clear: both;
+}
+
+/* close button css */
+
+.close-icon div {
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s, opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+    width: 20px;
+}
+.close-icon div:first-child {
+    transform: translate3d(0px, 10px, 0px) rotate3d(0, 0, 1, -45deg);
+}
+.close-icon div:first-child::after, .close-icon div:first-child::before {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0s, opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+}
+.close-icon div:last-child {
+    transform: translate3d(0px, 8px, 0px) rotate3d(0, 0, 1, 45deg);
+}
+.close-icon div:last-child::after, .close-icon div:last-child::before {
+    transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1) 0.2s, opacity 0.2s cubic-bezier(0.19, 1, 0.22, 1) 0.18s;
+}
+.close-icon div::after, .close-icon div::before {
+    content: "";
+    display: block;
+    height: 100%;
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+}
+.close-icon div::before {
+    background: none repeat scroll 0 0 red;
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+.close-icon div::after {
+    background: none repeat scroll 0 0 #333;
+    opacity: 0;
+    transform: translate3d(100%, 0px, 0px);
+}
+.close-icon:hover div::before {
+    opacity: 0;
+    transform: translate3d(-100%, 0px, 0px);
+}
+.close-icon:hover div::after {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+/* Useless style */
+.close-icon {
+  margin: 20px auto;
+  width: 50px;
+  height:50px;
+}
